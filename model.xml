@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel>
+		<properties/>
+		<struct>
+			<and abstract="true" mandatory="true" name="Base">
+				<and abstract="true" name="RX OPTIONS">
+					<feature name="RX_ALLERGY_CHECKING"/>
+					<feature name="RX_INTERACTION_LOCAL_DRUGREF_REGIONAL_IDENTIFIER"/>
+					<feature name="RX3"/>
+					<feature name="showRxBandNumber"/>
+					<feature name="rx.enable_internal_dispensing"/>
+					<feature name="rx_enhance"/>
+					<and abstract="true" name="ERX">
+						<feature name="util.erx.enabled"/>
+						<feature name="util.erx.clinic_training_mode"/>
+					</and>
+					<feature name="rx_signature_enabled"/>
+					<feature name="rx_fax_enabled"/>
+					<feature name="showRxChartNo"/>
+					<feature name="rx.drugofchoice.hide"/>
+					<feature name="enable_rx_custom_methodone_suboxone"/>
+					<feature name="enable_rx_watermark"/>
+					<feature name="rx_strict_med_term"/>
+					<feature name="RX_FOOTER"/>
+					<feature name="showRxHin"/>
+				</and>
+				<feature name="FORMS_PROMOTEXT"/>
+				<feature name="ldap.enabled"/>
+				<feature name="default_view"/>
+				<feature name="multioffice.formalize.provider.id"/>
+				<feature name="USE_NEW_ECHART"/>
+				<feature name="receptionist_alt_view"/>
+				<feature name="SINGLE_PAGE_CHART"/>
+				<and abstract="true" name="FORWARD OPTIONS">
+					<feature name="DOC_FORWARD"/>
+					<feature name="RA_FORWORD"/>
+					<feature name="TA_FORWARD"/>
+				</and>
+				<feature name="SOB_CHECKALL"/>
+				<feature name="save_as_xml"/>
+				<feature name="password.forcePasswordResetToUpdateStorage"/>
+				<and abstract="true" mandatory="true" name="BILLING">
+					<alt abstract="true" mandatory="true" name="BillRegion">
+						<feature name="BillOntario"/>
+						<feature name="BillBC"/>
+						<feature name="BillAlberta"/>
+					</alt>
+					<feature name="rma_enabled"/>
+					<feature name="inPatient"/>
+					<feature name="ENABLE_PREVENTION_BILLING"/>
+					<and abstract="true" name="ON BILLING OPTIONS">
+						<feature name="isNewONbilling"/>
+						<feature name="DX_QUICK_LIST_BILLING_REVIEW"/>
+						<feature name="warnOnDeleteBill"/>
+						<feature name="useDemoClinicInfoOnInvoice"/>
+					</and>
+					<feature name="BILLING_REVIEW_AUTO_PAYMENT"/>
+					<and abstract="true" name="BC BILLING OPTIONS">
+						<feature name="NEW_BC_TELEPLAN"/>
+						<feature name="BC_DEFAULT_ALT_BILLING"/>
+					</and>
+					<feature name="billcenter"/>
+				</and>
+				<feature name="new_label_print"/>
+				<feature name="CMESort"/>
+				<feature name="cr_security"/>
+				<feature name="clientdropbox"/>
+				<feature name="FILTER_ON_FACILITY"/>
+				<feature name="COMMUNITY_ISSUE_CODETYPE"/>
+				<feature name="ENABLE_CONFORMANCE_ONLY_FEATURES"/>
+				<feature name="QR_CODE_ENABLED_PROVIDER_DEFAULT"/>
+				<feature name="IGNORE_PASSWORD_REQUIREMENTS"/>
+				<feature name="workflow_enhance"/>
+				<and abstract="true" name="LAB">
+					<alt abstract="true" name="LAB_USED">
+						<feature name="HL7TEXT_LABS"/>
+						<feature name="PATHNET_LABS"/>
+						<feature name="MDS_LABS"/>
+						<feature name="CML_LABS"/>
+						<feature name="Epsilon_LABS"/>
+					</alt>
+					<feature name="HL7_A04_GENERATION"/>
+					<feature name="LAB_NOMATCH_NAMES"/>
+					<feature name="lab_req_override"/>
+					<feature name="lab_req_billing_no"/>
+					<feature name="lab_req_provider"/>
+					<feature name="use_lab_clientreference"/>
+					<feature name="LAB_TYPES"/>
+					<feature name="lab_req_include_chartno"/>
+					<and abstract="true" name="lab.handler">
+						<feature name="lab.handler.ALPHA.enabled"/>
+						<feature name="lab.handler.CML.enabled"/>
+						<feature name="lab.handler.EPSILON.enabled"/>
+						<feature name="lab.handler.PATHL7.enabled"/>
+						<feature name="lab.handler.GDML.enabled"/>
+						<feature name="lab.handler.HHSEMR.enabled"/>
+						<feature name="lab.handler.HRMXML.enabled"/>
+						<feature name="lab.handler.ICL.enabled"/>
+						<feature name="lab.handler.IHA.enabled"/>
+						<feature name="lab.handler.MDS.enabled"/>
+						<feature name="lab.handler.MEDVUE.enabled"/>
+						<feature name="lab.handler.OLIS_HL7.enabled"/>
+						<feature name="lab.handler.OSCAR_TO_OSCAR_HL7_V2.enabled"/>
+						<feature name="lab.handler.PDFDOC.enabled"/>
+						<feature name="lab.handler.PFHT.enabled"/>
+						<feature name="lab.handler.SIOUX.enabled"/>
+						<feature name="lab.handler.TDIS.enabled"/>
+						<feature name="lab.handler.Spire.enabled"/>
+						<feature name="lab.handler.OUL_R21.enabled"/>
+						<feature name="lab.handler.ORU_R01.enabled"/>
+						<feature name="lab.handler.BIOTEST.enabled"/>
+						<feature name="lab.handler.CLS.enabled"/>
+						<feature name="lab.handler.TRUENORTH.enabled"/>
+						<feature name="lab.handler.MEDITECH.enabled"/>
+						<feature name="lab.handler.OTHER.enabled"/>
+					</and>
+				</and>
+				<feature name="allowMultipleSameDayGroupAppt"/>
+				<feature name="enable_wait_list_email_notifications"/>
+				<feature name="indivica_hc_read_enabled"/>
+				<feature name="indivica_rich_text_letter_enabled"/>
+				<feature name="ALLOW_UPDATE_DOCUMENT_CONTENT"/>
+				<feature name="new_flowsheet_enabled"/>
+				<feature name="appt_intake_form"/>
+				<feature name="prevention_show_comments"/>
+				<feature name="myOSCAR.url"/>
+				<and abstract="true" name="FIRST NATIONS OPTIONS">
+					<feature name="FIRST_NATIONS_MODULE"/>
+					<feature name="showBandNumberOnly"/>
+				</and>
+				<feature name="mrp_model"/>
+				<feature name="health_tracker"/>
+				<feature name="ckd_notification_scheme"/>
+				<and abstract="true" name="LOGIN">
+					<feature name="login_local_ip"/>
+					<feature name="loginlogo"/>
+					<feature name="logintitle"/>
+					<feature name="logintext"/>
+				</and>
+				<feature name="wl_default_issue"/>
+				<feature name="moh_file_management_enabled"/>
+				<feature name="ORN_PILOT"/>
+				<feature name="displayNotesOnScheduleScreen"/>
+				<feature name="displayAlertsOnScheduleScreen"/>
+				<feature name="useProgramLocation"/>
+				<feature name="NEW_CONTACTS_UI"/>
+				<feature name="INCOMINGDOCUMENT_RECYCLEBIN"/>
+				<feature name="meditech_id"/>
+				<feature name="multisites"/>
+				<and abstract="true" name="OLIS">
+					<feature name="olis_request_url"/>
+					<feature name="olis_response_schema"/>
+					<feature name="olis_returned_cert"/>
+				</and>
+				<feature name="ModuleNames"/>
+				<feature name="resident_review"/>
+				<and abstract="true" name="MYOSCAR">
+					<feature name="oscar_myoscar_clinic_component_url"/>
+					<feature name="oscar_myoscar_sync_component_url"/>
+				</and>
+				<feature name="program_domain.show_echart"/>
+				<feature name="showPrimaryCarePhysicianCheck"/>
+				<feature name="TMP_DIR"/>
+				<feature name="signature_tablet"/>
+				<feature name="showEmploymentStatus"/>
+				<feature name="scheduleSiteID"/>
+				<feature name="province_names"/>
+				<feature name="sharingcenter.enabled"/>
+				<feature name="ONTARIO_MD_INCOMINGREQUESTOR"/>
+				<and name="caisi">
+					<feature name="TORONTO_RFQ"/>
+					<and abstract="true" name="PMM">
+						<feature name="pmm.refer.temporaryAdmission.enabled"/>
+						<feature name="pmm.client.search.outside.of.domain.enabled"/>
+					</and>
+					<feature name="AUTO_GENERATE_PROVIDER_NO"/>
+					<feature name="IS_PIN_ENCRYPTED"/>
+					<feature name="USE_CAISI_LOGO"/>
+					<feature name="caisi.new_client.strict_search"/>
+					<feature name="caisi.search.workflow"/>
+					<feature name="caisi.registration_intake.updateMRPOnSave"/>
+					<feature name="caisi.cds.restrict_by_program_domain"/>
+				</and>
+				<feature name="PREVENTION_ITEMS"/>
+				<feature name="PREVENTION_CONFIG_SETS"/>
+				<feature name="OSCAR_START_TIME"/>
+				<feature name="mc_number"/>
+				<feature name="oscarMeasurements.orderGroupById"/>
+				<feature name="mandatory_password_reset"/>
+				<feature name="print.includeMRP"/>
+				<feature name="invoice_reports.print.hide_name"/>
+				<feature name="clinic_no"/>
+				<or abstract="true" name="CASE OPTIONS">
+					<feature name="CASEMANAGEMENT"/>
+					<feature name="CASELOAD_DEFAULT_ALL_PROVIDERS"/>
+					<feature name="casemgmt.note.password.enabled"/>
+				</or>
+				<feature name="PREVENTION_CLASSIC_VIEW"/>
+				<feature name="enable_create_child_record"/>
+				<feature name="showSexualHealthLabel"/>
+				<and abstract="true" name="CONSULTATION OPTIONS">
+					<feature name="printPDF_referring_prac"/>
+					<and name="faxEnable">
+						<and name="consultation_fax_enabled">
+							<feature mandatory="true" name="consultation_indivica_attachment_enabled"/>
+						</and>
+						<feature name="faxLogo"/>
+					</and>
+					<feature name="consultation_signature_enabled"/>
+					<feature name="CONSULTATION_APPOINTMENT_INSTRUCTIONS_LOOKUP"/>
+					<feature name="CONSULTATION_AUTO_INCLUDE_MEDICATIONS"/>
+					<feature name="CONSULTATION_LOCK_REFERRAL_DATE"/>
+					<feature name="CONSULTATION_AUTO_INCLUDE_ALLERGIES"/>
+					<feature name="consultation_dynamic_labelling_enabled"/>
+				</and>
+				<feature name="NEW_USER_PIN_CONTROL"/>
+				<feature name="olis_simulate"/>
+				<feature name="cobalt"/>
+				<feature name="skip_postal_code_validation"/>
+				<feature name="confirmAck"/>
+				<and abstract="true" name="TICKLER">
+					<feature name="tickler_edit_enabled"/>
+					<feature name="tickler_email_enabled"/>
+					<feature name="tickler_email_provider_enabled"/>
+					<feature name="tickler_default_assigned_provider"/>
+				</and>
+				<feature name="schedule.groupsFromPrograms"/>
+				<feature name="default_schedule_viewall"/>
+				<feature name="eaaps.enabled"/>
+				<and abstract="true" name="DEMOGRAPHIC">
+					<feature name="DEMOGRAPHIC_PATIENT_HEALTH_CARE_TEAM"/>
+					<feature name="NEW_CONTACTS_UI_EXTERNAL_CONTACT"/>
+					<and abstract="true" name="CBI">
+						<feature name="CBI_REMINDER_WINDOW"/>
+						<feature name="CBI_REMIND_ON_UPDATE_DEMOGRAPHIC"/>
+					</and>
+					<feature name="USE_NEW_PATIENT_CONSENT_MODULE"/>
+				</and>
+				<feature name="labreq_CKD"/>
+				<feature name="search.searchName.addLeadingWildcard"/>
+				<feature name="TRANSPORTATION_TIME_MANDATORY"/>
+				<feature name="encounter.hide_invoices"/>
+				<and abstract="true" name="INTEGRATOR">
+					<feature name="INTEGRATOR_COMPRESSION_ENABLED"/>
+					<feature name="INTEGRATOR_FORCE_FULL"/>
+					<feature name="INTEGRATOR_LOCAL_STORE"/>
+					<feature name="INTEGRATOR_LOGGING_ENABLED"/>
+				</and>
+				<feature name="ENCOUNTER_TIME_MANDATORY"/>
+				<feature name="demographicExt"/>
+				<and abstract="true" name="MCEDT">
+					<feature name="mcedt.enabled"/>
+					<feature name="mcedt.logging.skip"/>
+					<feature name="mcedt.mailbox.enabled"/>
+				</and>
+				<and abstract="true" name="HCV">
+					<alt abstract="true" name="HCV TYPE">
+						<feature name="HCV SIMPLE"/>
+						<feature name="HCV ONLINE"/>
+					</alt>
+					<feature name="hcv.logging.skip"/>
+				</and>
+				<feature name="hsfo.loginSiteCode"/>
+				<feature name="print.useCurrentProgramInfoInHeader"/>
+				<feature name="invoice_due_date"/>
+				<and abstract="true" name="EFORM">
+					<feature name="eform_fax_enabled"/>
+					<feature name="eform_signature_enabled"/>
+					<feature name="eform_generator_indivica_signature_enabled"/>
+					<feature name="eform_generator_indivica_print_enabled"/>
+					<feature name="eform_generator_indivica_fax_enabled"/>
+				</and>
+				<feature name="AbandonOldChart"/>
+			</and>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
