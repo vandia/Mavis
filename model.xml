@@ -3,46 +3,46 @@
 		<properties/>
 		<struct>
 			<and abstract="true" mandatory="true" name="Base">
-				<and abstract="true" name="RX OPTIONS">
+				<and abstract="true" name="RX_OPTIONS">
 					<feature name="RX_ALLERGY_CHECKING"/>
 					<feature name="RX_INTERACTION_LOCAL_DRUGREF_REGIONAL_IDENTIFIER"/>
 					<feature name="RX3"/>
 					<feature name="showRxBandNumber"/>
-					<feature name="rx.enable_internal_dispensing"/>
+					<feature name="rx_enable_internal_dispensing"/>
 					<feature name="rx_enhance"/>
 					<and abstract="true" name="ERX">
-						<feature name="util.erx.enabled"/>
-						<feature name="util.erx.clinic_training_mode"/>
+						<feature name="util_erx_enabled"/>
+						<feature name="util_erx_clinic_training_mode"/>
 					</and>
 					<feature name="rx_signature_enabled"/>
 					<feature name="rx_fax_enabled"/>
 					<feature name="showRxChartNo"/>
-					<feature name="rx.drugofchoice.hide"/>
+					<feature name="rx_drugofchoice_hide"/>
 					<feature name="enable_rx_custom_methodone_suboxone"/>
 					<feature name="enable_rx_watermark"/>
 					<feature name="rx_strict_med_term"/>
 					<feature name="RX_FOOTER"/>
 					<feature name="showRxHin"/>
-					<feature name="rx.delete_drug.hide"/>
-					<feature name="rx.profile_legend.hide"/>
+					<feature name="rx_delete_drug_hide"/>
+					<feature name="rx_profile_legend_hide"/>
 					<feature name="RXFAX"/>
-					<feature name="oscarrx.medrec"/>
+					<feature name="oscarrx_medrec"/>
 				</and>
 				<feature name="FORMS_PROMOTEXT"/>
-				<feature name="ldap.enabled"/>
+				<feature name="ldap_enabled"/>
 				<feature name="default_view"/>
-				<feature name="multioffice.formalize.provider.id"/>
+				<feature name="multioffice_formalize_provider_id"/>
 				<feature name="USE_NEW_ECHART"/>
 				<feature name="receptionist_alt_view"/>
 				<feature name="SINGLE_PAGE_CHART"/>
-				<and abstract="true" name="FORWARD OPTIONS">
+				<and abstract="true" name="FORWARD_OPTIONS">
 					<feature name="DOC_FORWARD"/>
 					<feature name="RA_FORWORD"/>
 					<feature name="TA_FORWARD"/>
 				</and>
 				<feature name="SOB_CHECKALL"/>
 				<feature name="save_as_xml"/>
-				<feature name="password.forcePasswordResetToUpdateStorage"/>
+				<feature name="password_forcePasswordResetToUpdateStorage"/>
 				<and abstract="true" mandatory="true" name="BILLING">
 					<alt abstract="true" mandatory="true" name="BillRegion">
 						<description>
@@ -101,32 +101,32 @@
 					<feature name="use_lab_clientreference"/>
 					<feature name="LAB_TYPES"/>
 					<feature name="lab_req_include_chartno"/>
-					<and abstract="true" name="lab.handler">
-						<feature name="lab.handler.ALPHA.enabled"/>
-						<feature name="lab.handler.CML.enabled"/>
-						<feature name="lab.handler.EPSILON.enabled"/>
-						<feature name="lab.handler.PATHL7.enabled"/>
-						<feature name="lab.handler.GDML.enabled"/>
-						<feature name="lab.handler.HHSEMR.enabled"/>
-						<feature name="lab.handler.HRMXML.enabled"/>
-						<feature name="lab.handler.ICL.enabled"/>
-						<feature name="lab.handler.IHA.enabled"/>
-						<feature name="lab.handler.MDS.enabled"/>
-						<feature name="lab.handler.MEDVUE.enabled"/>
-						<feature name="lab.handler.OLIS_HL7.enabled"/>
-						<feature name="lab.handler.OSCAR_TO_OSCAR_HL7_V2.enabled"/>
-						<feature name="lab.handler.PDFDOC.enabled"/>
-						<feature name="lab.handler.PFHT.enabled"/>
-						<feature name="lab.handler.SIOUX.enabled"/>
-						<feature name="lab.handler.TDIS.enabled"/>
-						<feature name="lab.handler.Spire.enabled"/>
-						<feature name="lab.handler.OUL_R21.enabled"/>
-						<feature name="lab.handler.ORU_R01.enabled"/>
-						<feature name="lab.handler.BIOTEST.enabled"/>
-						<feature name="lab.handler.CLS.enabled"/>
-						<feature name="lab.handler.TRUENORTH.enabled"/>
-						<feature name="lab.handler.MEDITECH.enabled"/>
-						<feature name="lab.handler.OTHER.enabled"/>
+					<and abstract="true" name="lab_handler">
+						<feature name="lab_handler_ALPHA_enabled"/>
+						<feature name="lab_handler_CML_enabled"/>
+						<feature name="lab_handler_EPSILON_enabled"/>
+						<feature name="lab_handler_PATHL7_enabled"/>
+						<feature name="lab_handler_GDML_enabled"/>
+						<feature name="lab_handler_HHSEMR_enabled"/>
+						<feature name="lab_handler_HRMXML_enabled"/>
+						<feature name="lab_handler_ICL_enabled"/>
+						<feature name="lab_handler_IHA_enabled"/>
+						<feature name="lab_handler_MDS_enabled"/>
+						<feature name="lab_handler_MEDVUE_enabled"/>
+						<feature name="lab_handler_OLIS_HL7_enabled"/>
+						<feature name="lab_handler_OSCAR_TO_OSCAR_HL7_V2_enabled"/>
+						<feature name="lab_handler_PDFDOC_enabled"/>
+						<feature name="lab_handler_PFHT_enabled"/>
+						<feature name="lab_handler_SIOUX_enabled"/>
+						<feature name="lab_handler_TDIS_enabled"/>
+						<feature name="lab_handler_Spire_enabled"/>
+						<feature name="lab_handler_OUL_R21_enabled"/>
+						<feature name="lab_handler_ORU_R01_enabled"/>
+						<feature name="lab_handler_BIOTEST_enabled"/>
+						<feature name="lab_handler_CLS_enabled"/>
+						<feature name="lab_handler_TRUENORTH_enabled"/>
+						<feature name="lab_handler_MEDITECH_enabled"/>
+						<feature name="lab_handler_OTHER_enabled"/>
 					</and>
 				</and>
 				<feature name="allowMultipleSameDayGroupAppt"/>
@@ -143,8 +143,8 @@
 				<feature name="ALLOW_UPDATE_DOCUMENT_CONTENT"/>
 				<feature name="new_flowsheet_enabled"/>
 				<feature name="appt_intake_form"/>
-				<feature name="myOSCAR.url"/>
-				<and abstract="true" name="FIRST NATIONS OPTIONS">
+				<feature name="myOSCAR_url"/>
+				<and abstract="true" name="FIRST_NATIONS_OPTIONS">
 					<feature name="FIRST_NATIONS_MODULE"/>
 					<feature name="showBandNumberOnly"/>
 				</and>
@@ -178,45 +178,45 @@
 					<feature name="oscar_myoscar_clinic_component_url"/>
 					<feature name="oscar_myoscar_sync_component_url"/>
 				</and>
-				<feature name="program_domain.show_echart"/>
+				<feature name="program_domain_show_echart"/>
 				<feature name="showPrimaryCarePhysicianCheck"/>
 				<feature name="TMP_DIR"/>
 				<feature name="signature_tablet"/>
 				<feature name="showEmploymentStatus"/>
 				<feature name="scheduleSiteID"/>
 				<feature name="province_names"/>
-				<feature name="sharingcenter.enabled"/>
+				<feature name="sharingcenter_enabled"/>
 				<feature name="ONTARIO_MD_INCOMINGREQUESTOR"/>
 				<and name="caisi">
 					<feature name="TORONTO_RFQ"/>
 					<and abstract="true" name="PMM">
-						<feature name="pmm.refer.temporaryAdmission.enabled"/>
-						<feature name="pmm.client.search.outside.of.domain.enabled"/>
+						<feature name="pmm_refer_temporaryAdmission_enabled"/>
+						<feature name="pmm_client_search_outside_of_domain_enabled"/>
 					</and>
 					<feature name="AUTO_GENERATE_PROVIDER_NO"/>
 					<feature name="IS_PIN_ENCRYPTED"/>
 					<feature name="USE_CAISI_LOGO"/>
-					<feature name="caisi.new_client.strict_search"/>
-					<feature name="caisi.search.workflow"/>
-					<feature name="caisi.registration_intake.updateMRPOnSave"/>
-					<feature name="caisi.cds.restrict_by_program_domain"/>
+					<feature name="caisi_new_client_strict_search"/>
+					<feature name="caisi_search_workflow"/>
+					<feature name="caisi_registration_intake_updateMRPOnSave"/>
+					<feature name="caisi_cds_restrict_by_program_domain"/>
 					<feature name="NOT_FOR_CAISI"/>
 				</and>
 				<feature name="OSCAR_START_TIME"/>
 				<feature name="mc_number"/>
-				<feature name="oscarMeasurements.orderGroupById"/>
+				<feature name="oscarMeasurements_orderGroupById"/>
 				<feature name="mandatory_password_reset"/>
-				<feature name="print.includeMRP"/>
-				<feature name="invoice_reports.print.hide_name"/>
+				<feature name="print_includeMRP"/>
+				<feature name="invoice_reports_print_hide_name"/>
 				<feature name="clinic_no"/>
-				<or abstract="true" name="CASE OPTIONS">
+				<or abstract="true" name="CASE_OPTIONS">
 					<feature name="CASEMANAGEMENT"/>
 					<feature name="CASELOAD_DEFAULT_ALL_PROVIDERS"/>
-					<feature name="casemgmt.note.password.enabled"/>
+					<feature name="casemgmt_note_password_enabled"/>
 				</or>
 				<feature name="enable_create_child_record"/>
 				<feature name="showSexualHealthLabel"/>
-				<and abstract="true" name="CONSULTATION OPTIONS">
+				<and abstract="true" name="CONSULTATION_OPTIONS">
 					<feature name="printPDF_referring_prac"/>
 					<and name="faxEnable">
 						<and name="consultation_fax_enabled">
@@ -245,9 +245,9 @@
 					<feature name="tickler_email_provider_enabled"/>
 					<feature name="tickler_default_assigned_provider"/>
 				</and>
-				<feature name="schedule.groupsFromPrograms"/>
+				<feature name="schedule_groupsFromPrograms"/>
 				<feature name="default_schedule_viewall"/>
-				<feature name="eaaps.enabled"/>
+				<feature name="eaaps_enabled"/>
 				<and abstract="true" name="DEMOGRAPHIC">
 					<feature name="DEMOGRAPHIC_PATIENT_CLINIC_STATUS"/>
 					<feature name="DEMOGRAPHIC_PATIENT_ROSTERING"/>
@@ -271,9 +271,9 @@
 					</and>
 				</and>
 				<feature name="labreq_CKD"/>
-				<feature name="search.searchName.addLeadingWildcard"/>
+				<feature name="search_searchName_addLeadingWildcard"/>
 				<feature name="TRANSPORTATION_TIME_MANDATORY"/>
-				<feature name="encounter.hide_invoices"/>
+				<feature name="encounter_hide_invoices"/>
 				<and abstract="true" name="INTEGRATOR">
 					<feature name="INTEGRATOR_COMPRESSION_ENABLED"/>
 					<feature name="INTEGRATOR_FORCE_FULL"/>
@@ -282,29 +282,29 @@
 				</and>
 				<feature name="ENCOUNTER_TIME_MANDATORY"/>
 				<and abstract="true" name="MCEDT">
-					<feature name="mcedt.enabled"/>
-					<feature name="mcedt.logging.skip"/>
-					<feature name="mcedt.mailbox.enabled"/>
+					<feature name="mcedt_enabled"/>
+					<feature name="mcedt_logging_skip"/>
+					<feature name="mcedt_mailbox_enabled"/>
 				</and>
 				<and abstract="true" name="HCV">
-					<alt abstract="true" name="HCV TYPE">
-						<feature name="HCV SIMPLE"/>
-						<feature name="HCV ONLINE"/>
+					<alt abstract="true" name="HCV_TYPE">
+						<feature name="HCV_SIMPLE"/>
+						<feature name="HCV_ONLINE"/>
 					</alt>
-					<feature name="hcv.logging.skip"/>
+					<feature name="hcv_logging_skip"/>
 				</and>
-				<feature name="hsfo.loginSiteCode"/>
-				<feature name="print.useCurrentProgramInfoInHeader"/>
+				<feature name="hsfo_loginSiteCode"/>
+				<feature name="print_useCurrentProgramInfoInHeader"/>
 				<feature name="invoice_due_date"/>
 				<and abstract="true" name="EFORM">
 					<feature name="eform_fax_enabled"/>
 					<feature name="eform_signature_enabled"/>
 				</and>
 				<feature name="AbandonOldChart"/>
-				<feature name="admin.hph"/>
+				<feature name="admin_hph"/>
 				<and abstract="true" name="ALLERGIES">
 					<feature name="ALLERGIES_SIMPLE_SEARCH"/>
-					<feature name="allergies.flat_results"/>
+					<feature name="allergies_flat_results"/>
 				</and>
 				<feature name="appt_formview"/>
 				<feature name="APPT_SHOW_SHORT_LETTERS"/>
@@ -320,25 +320,25 @@
 				<feature name="daysheet_dob"/>
 				<feature name="DEBUG"/>
 				<feature name="DEFAULT_PHS_PROVIDER"/>
-				<feature name="disable.patientList.tab.recent"/>
+				<feature name="disable_patientList_tab_recent"/>
 				<feature name="disableTelProgressNoteTitleInEncouterNotes"/>
 				<feature name="DOCUMENT_DIR"/>
 				<feature name="drug_allergy_interaction_warnings"/>
 				<feature name="drugref_route_search"/>
-				<feature name="eaaps.debug"/>
-				<feature name="echart.cpp.single_line"/>
+				<feature name="eaaps_debug"/>
+				<feature name="echart_cpp_single_line"/>
 				<feature name="ENABLE_ACCOUNT_LOCKING"/>
-				<feature name="encounter.hide_cpp_notes"/>
-				<feature name="encounter.hide_document_notes"/>
-				<feature name="encounter.hide_eform_notes"/>
+				<feature name="encounter_hide_cpp_notes"/>
+				<feature name="encounter_hide_document_notes"/>
+				<feature name="encounter_hide_eform_notes"/>
 				<feature name="encPrintOnly"/>
 				<feature name="EXTRA_DEMO_FIELDS"/>
-				<feature name="hsfo2.isTest"/>
-				<feature name="hsfo2.loginSiteCode"/>
+				<feature name="hsfo2_isTest"/>
+				<feature name="hsfo2_loginSiteCode"/>
 				<feature name="IMMUNIZATION"/>
 				<feature name="IMMUNIZATION_IN_PREVENTION"/>
-				<feature name="intake.readonly_dates"/>
-				<feature name="labs.hide_old_grid_display"/>
+				<feature name="intake_readonly_dates"/>
+				<feature name="labs_hide_old_grid_display"/>
 				<feature name="login_lock"/>
 				<feature name="LOGINTEST"/>
 				<feature name="medicalHistory"/>
@@ -359,7 +359,7 @@
 					<feature name="PREVENTION_ITEMS"/>
 					<feature name="PREVENTION_CONFIG_SETS"/>
 					<feature name="PREVENTION_CLASSIC_VIEW"/>
-					<feature name="DEBUG.PREVENTION"/>
+					<feature name="DEBUG_PREVENTION"/>
 					<feature name="SHOW_PREVENTION_STOP_SIGNS"/>
 				</and>
 				<feature name="privateConsentEnabled"/>
@@ -385,11 +385,11 @@
 				<feature name="ENABLE_CME_ON_REG_INTAKE"/>
 				<feature name="ENABLE_EDIT_APPT_STATUS"/>
 				<feature name="enableFax"/>
-				<feature name="encounter.empty_new_note"/>
+				<feature name="encounter_empty_new_note"/>
 				<feature name="FORCED_ROSTER_INTEGRATOR_LOCAL_STORE"/>
 				<feature name="isMRefDocSelectList"/>
 				<feature name="isSpecialist"/>
-				<feature name="lab.hhsemr.filter_ordering_provider"/>
+				<feature name="lab_hhsemr_filter_ordering_provider"/>
 				<feature name="legacy_document_upload_enabled"/>
 				<feature name="log_accesses_of_client"/>
 				<feature name="log_accesses_of_program"/>
